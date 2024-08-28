@@ -10,7 +10,7 @@ pipelineJob('hello-world') {
                     branches('*/main')
                 }
             }
-            scriptPath('pipelines/helloworld.jenkins')
+            scriptPath('pipelines/helloworldpipeline.jenkins')
         }
     }
 }
