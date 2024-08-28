@@ -1,0 +1,15 @@
+pipelineJob('hello-world') {
+    displayName('hello-world-pipeline')
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url('https://github.com/mohamedmshokry/jenkins-operator-cicd.git')
+                    }
+                    branches('*/main')
+                }
+            }
+            scriptPath('pipelines/hello-world.jenkins')
+        }
+    }
