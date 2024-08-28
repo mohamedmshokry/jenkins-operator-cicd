@@ -13,3 +13,4 @@ pipelineJob('hello-world') {
             scriptPath('pipelines/hello-world.jenkins')
         }
     }
+}
